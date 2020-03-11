@@ -1,0 +1,210 @@
+body, html{
+    background: #FDC830;
+    background: -webkit-linear-gradient(to left, #b4315b, #d97393);
+    background: linear-gradient(to left, #b4315b, #d97393);
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    margin:0;
+  }
+  
+  video {
+    object-fit:cover;
+    position:absolute;
+    height:65%;
+    width:74%;
+    top: 16%;
+    left:12%;
+  }
+  
+  .total{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+  }
+  
+  .info{
+    background-color:#CF5079;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    color:white;
+    width:640px;
+    height:115px;
+    line-height:22px;
+    position:absolute;
+    top:0;
+    left:0;
+    transform: translateX(-590px);
+    transition-property: transform;
+    transition-duration: 1s;
+    -webkit-filter: drop-shadow(0px 0px 7px #8c3e60 );
+    filter: drop-shadow(0px 0px 7px #8c3e60);
+  }
+  .info:hover{
+    transform: translateX(0px);
+  }
+  .info::after{
+    content:url("https://i.imgur.com/eaVfteX.jpg");
+    position:absolute;
+    top:0%;
+    left:590px;
+    z-index:1;
+  }
+  
+  .dessin {
+    width:70%;
+    height:70%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+  }
+  
+  .bouche{
+    position:relative;
+    background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+  }
+  .bouche img{
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+  .bouche:hover{
+    animation-name: hover;
+    animation-duration: 0.5s;
+  }
+  @keyframes hover { 
+    0% { transform: translateY(0px) }  
+    50% { transform: translateY(-10px) } 
+    100% { transform: translateY(0px) }
+  }
+  .bouche:active{
+    transform: scale(0.90);
+  }
+  .bouche:focus{
+     -webkit-filter: drop-shadow(0px 0px 7px black );
+    filter: drop-shadow(0px 0px 7px black);
+    outline: none;
+  }
+  
+  .oeil_gauche img{
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; HTML */
+    -moz-user-select: none; versions of Firefox */
+    -ms-user-select: none; Explorer/Edge */
+    user-select: none;
+    -webkit-filter: drop-shadow(0px 0px 7px black );
+    filter: drop-shadow(0px 0px 7px black);
+  }
+  
+  .oeil_droit img{
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; HTML */
+    -moz-user-select: none; versions of Firefox */
+    -ms-user-select: none; Explorer/Edge */
+    user-select: none;
+    -webkit-filter: drop-shadow(0px 0px 7px black );
+    filter: drop-shadow(0px 0px 7px black);
+  }
+  
+  *:focus {
+      outline: none;
+  }
+  
+  .stop{
+    position:absolute;
+    border: none;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color:#e3335a;
+    display: inline-block;
+    padding: 33px 20px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border-radius: 100%;
+    border:none;
+    box-shadow: 0 12px #631d2c;
+    top:10px;
+    right:10px;
+  }
+  .stop:active{
+    top:19px;
+    box-shadow:0 3px #8c2647;
+  }
+  .stop:hover{
+    background-color:#ea627f;
+    box-shadow: #a02c51;
+  }
+  .stop:focus{
+    -webkit-filter: drop-shadow(0px 0px 7px #631d2c );
+    filter: drop-shadow(3px 3px 7px #631d2c );
+  }
+  
+  .bras_droit{
+    width:120%;
+    height:120%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    transform: translateX(120%);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+  }
+  .bras_gauche{
+    width:120%;
+    height:120%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    transform: translate(-122%);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+  }
+  .bras_droit img{
+    pointer-events: none;
+    webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; HTML */
+    -moz-user-select: none; versions of Firefox */
+    -ms-user-select: none; Explorer/Edge */
+    user-select: none;
+    -webkit-filter: drop-shadow(0px 0px 7px black );
+    filter: drop-shadow(0px 0px 7px black);
+  }
+  .bras_gauche img{
+    pointer-events: none;
+    webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; HTML */
+    -moz-user-select: none; versions of Firefox */
+    -ms-user-select: none; Explorer/Edge */
+    user-select: none;
+    -webkit-filter: drop-shadow(0px 0px 7px black );
+    filter: drop-shadow(0px 0px 7px black);
+  }
+  
+  
